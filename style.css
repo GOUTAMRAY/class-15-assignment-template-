@@ -1,0 +1,424 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+.container{
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/********   HEADER SECTION **********/
+.header{
+    background: #000000;
+}
+.header-logo{
+width: 30%;
+}
+.header-logo a{
+
+}
+.header-logo a img {
+    width: 50px;
+    padding-top: 10px;
+}
+
+.header-menu{
+width: 70%;
+}
+.header-menu ul {
+    text-align: right;
+}
+.header-menu ul li {
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.header-menu ul li a {
+    color: #fff;
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 25px;
+    line-height: 50px;
+
+    position: relative;
+}
+    
+
+.header-menu ul li a::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: 12px;
+    top: 37px;
+    background: #fff;
+    width: 0;
+    height: 3px;
+
+    transition: .4s;
+}
+.header-menu ul li:hover > a::after{
+width: 75%;
+}
+.header-menu ul li ul li a::after{
+w
+}
+/***** dropdown menu *****/
+
+.header-menu ul li{
+position: relative;
+
+
+}
+
+.header-menu ul li ul{position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 100%;
+   width: 100px;
+   background: #000000;
+
+   opacity: 0;
+   visibility: hidden;
+   transition: .4s;
+   transform: scaleY(0);
+   transform-origin: top center;
+
+}
+.header-menu ul li:hover  ul{
+opacity: 1;
+visibility: visible;
+transform: scaleY(1);
+
+
+}
+.header-menu ul li ul li{
+    display: inline-block;
+}
+.header-menu  ul li a i {
+    font-size: 15px;
+}
+ /***** Banner section   *****/
+
+
+ .banner {
+    background:url(https://i.ibb.co/6FhnthF/a0c6042d4612d7adf44692fffac7e082.jpg) no-repeat top center ;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.text1{
+
+}
+
+.text1 h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.text1 h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.btn{
+display: inline-block;
+background: black;
+margin-right: 10px;
+}
+.button a {
+    color: #fff;
+    background: #000000;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: .4s;
+
+
+}
+.button-2 a {
+    color: #000000;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: .4s;
+
+
+}
+.bbtn a:hover{
+    background: #fff;
+    color:#000000;
+
+}
+.bbtn-2 a:hover{
+background: #000000;
+color:#fff;
+}
+
+/* about section  */
+.about{
+    background: #87a471;
+    padding: 25px 0;
+}
+.heading {
+    color: #fff;
+    text-align: center;
+    font-size: 45px;
+    position: relative;
+    margin: 35px 0;
+}
+.heading::after {
+    content: "";
+    position: absolute;
+    left: 41%;
+    top: 100%;
+    height: 3px;
+    width: 21%;
+    background: #fff;
+}
+
+.content{
+width: 50%;
+padding: 0 30px;
+}
+.content p {
+    font-size: 25px;
+    margin-top: 25px;
+    color: #fff;
+}
+.image{
+width: 50%;
+}
+
+.image img{
+max-width: 100%;
+}
+
+/* service section  */
+.service{
+background: #606a64;
+padding-top: 20px ;
+padding-bottom:235px ;
+}
+.text-2 {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+.text-2 h2{
+
+}
+.text-2 h3 {
+    color: #fff;
+    font-size: 29px;
+    margin: 20px 0;
+}
+.text-2 p{
+    width: 60%;
+    margin: auto;
+    color:#cacbca ;
+
+}
+
+
+.service-item{
+background: #fff;
+padding: 30px 20px ;
+float: left;
+width: 31%;
+margin-right: 2%;
+border-radius: 20px;
+
+}
+.icon{
+    width: 20%;
+}
+
+.icon img{
+
+}
+.service-text {
+    width: 75%;
+    margin-top: 12px;
+}
+.service-text h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.service-text p{
+
+}
+/****  Product section   *****/
+
+.product{
+background:#87a471 ;
+}
+.pro-1{
+padding: 10px 0;
+}
+
+.pro-1 h2 {
+    font-size: 31px;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+.pro-1 p {
+    color: #d3d9d0;
+    font-size: 23px;
+}
+.pic {
+    margin-right: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border: 1px solid #fff;
+}
+.pic img {
+    width: 450px;
+    height: auto;
+
+}
+.pic h2{
+color: #506a85;
+margin: 10px 0;
+}
+.pic h3{
+color: #ecf1e9;
+margin-bottom: 10px;
+}
+
+
+/*****  portfolio section  *****/
+.portfolio{
+    padding-bottom: 20px;
+}
+
+.img-1{
+    width: 23%;
+    margin-right: 2%;
+    margin-top: 25px ;
+}
+
+/*****  Team section   ******/
+.team {
+    background: #5b9776;
+    padding-top: 20px;
+}
+.team h2{
+    font-size: 30px;
+}
+.team-member{
+width: 30%;
+}
+.team-member ul{
+    text-align: center;
+}
+
+.MEMBER-1 img{
+max-width: 100%;
+}
+
+.social-icon {
+   
+}
+
+.social-icon ul li {
+    display: inline-block;
+    padding: 0 7px;
+}
+.social-icon ul li a {
+    display: inline-block;
+    background: #fff;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    left: 25px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+    transition: .4s;
+}
+.social-icon ul li a:hover{
+    background:blue;
+    color: #fff;
+}
+
+/*****  work section   *****/
+.work{
+background: #606a64;
+}
+.my-work{
+    padding: 30px 0;
+}
+.work h2 {
+    color: #fff;
+    font-size: 35px;
+}
+.work p {
+    color: #cecfce;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.btn-2{
+    color: #fff;
+background: #00bc9c !important;
+}
+.btn-2:hover{
+    background:#30336b !important ;
+}
+/**** footer section  ****/
+.footer{
+    background: black;
+}
+.footer p{
+    color: #fff;
+    font-size: 25px ;
+    padding: 10px 0;
+}
+.footer p a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    transition: .3s;
+}
+.footer p a:hover{
+    color: blue;
+}
+
